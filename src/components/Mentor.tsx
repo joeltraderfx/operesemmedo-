@@ -1,5 +1,5 @@
 import { useLeadModal } from "@/lib/leadModalContext";
-import { ACCOUNT_URL } from "./Hero";
+import { WHATSAPP_URL } from "./Hero";
 import { GraduationCap, TrendingUp, Users } from "lucide-react";
 
 const ways = [
@@ -61,7 +61,7 @@ export function Mentor() {
         </div>
 
         <button
-          onClick={() => openModal(ACCOUNT_URL)}
+          onClick={() => openModal(WHATSAPP_URL)}
           className="btn-fearless w-full py-4 rounded-xl font-display uppercase text-base tracking-wide"
         >
           Quero começar agora

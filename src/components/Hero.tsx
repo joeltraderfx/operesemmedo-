@@ -2,6 +2,7 @@ import { useLeadModal } from "@/lib/leadModalContext";
 import { ShieldCheck } from "lucide-react";
 
 const ACCOUNT_URL = "https://www.vtmarkets.net/pt/trade-now/?affid=MjQzNjA3Mzc=&invitecode=wiQxT28t";
+const WHATSAPP_URL = "https://chat.whatsapp.com/L0qYY0jfrl8IMgNhTsUPQX";
 
 export function Hero() {
   const { openModal } = useLeadModal();
@@ -48,7 +49,7 @@ export function Hero() {
         </div>
 
         <button
-          onClick={() => openModal(ACCOUNT_URL)}
+          onClick={() => openModal(WHATSAPP_URL)}
           className="btn-fearless w-full py-4 rounded-xl font-display uppercase text-base tracking-wide"
         >
           Quero acompanhar os 7 dias
@@ -61,4 +62,4 @@ export function Hero() {
   );
 }
 
-export { ACCOUNT_URL };
+export { ACCOUNT_URL, WHATSAPP_URL };
