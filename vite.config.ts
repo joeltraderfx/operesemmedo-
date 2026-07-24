@@ -6,7 +6,7 @@ import path from "path";
 const isGitHubPages = process.env.GITHUB_PAGES === "true";
 
 export default defineConfig({
-  base: isGitHubPages ? "/operesemmedo/" : "/",
+  base: isGitHubPages ? "/operesemmedo-/" : "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: { "@": path.resolve(__dirname, "./src") },
